@@ -1,6 +1,32 @@
 body {
-    background-color: LightGray;
+    margin: 0;
 }
 div {
     border: 1px solid Chocolate;
+}
+/* Navigation Section*/
+.header {
+	background-color: #fff;
+
+}
+
+.header > .content {
+	width: 60rem;
+	height: 4.375rem;
+	margin: 0 auto;
+}
+
+.logo {
+	
+}
+
+.links {
+	list-style-type: none;
+	float: right;
+
+}
+
+.links li {
+	display: inline;
+
 }
