@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/karma.css">
 	<title>Karma Clone</title>
 </head>
-<div id="wrapper">
 <body>
 	<nav class"header">
 		<div class="content">
-			<img class="logo" src="images/karma-logo copy.svg" alt="logo Image" width="26">
 			<ul class="links">
-				<li><a>Meet Karma</a></li>
+				<li class="active"><a>Meet Karma</a></li>
 				<li><a>How it Works</a></li>
 				<li><a>Store</a></li>
 				<li><a>Blog</a></li>
 				<li><a>Help</a></li>
 				<li><a>Login</a></li>
 			</ul>
+			<!-- ul.links have been put above the img.logo as it's a best practice to have 
+			floating elements above non-floating elements. -->
+			<img class="logo" src="images/karma-logo copy.svg" alt="logo Image" width="26">
 		</div>
 	</nav>
 </body>
-</div>
 </html>

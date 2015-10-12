@@ -1,32 +1,47 @@
 body {
-    margin: 0;
+	margin: 0;
 }
+
 div {
     border: 1px solid Chocolate;
 }
+
 /* Navigation Section*/
 .header {
 	background-color: #fff;
-
+	width:100%;
+	position:fixed;
 }
 
-.header > .content {
-	width: 60rem;
-	height: 4.375rem;
-	margin: 0 auto;
+.content {
+	padding: 0rem .5rem;
 }
 
-.logo {
-	
-}
 
 .links {
 	list-style-type: none;
 	float: right;
-
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #838994;
+	letter-spacing: 0.03em;
+	-webkit-font-smoothing: antialiased;
 }
+
+/* makes li active with a set color */
+.links > li.active {
+    color: #4c5058;
+    font-weight: 500;
+}
+
 
 .links li {
 	display: inline;
+	padding: 0rem 1.3rem;
+}
 
+/* mouse over link */
+.links li:hover {
+	cursor: pointer;
+	color: #333333;
 }
