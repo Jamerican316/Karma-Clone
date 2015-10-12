@@ -13,12 +13,12 @@ div {
 	position:fixed;
 }
 
-.content {
+.header > div.content {
 	padding: 0rem .5rem;
 }
 
 
-.links {
+.header .links {
 	list-style-type: none;
 	float: right;
 	font-family: 'Roboto', sans-serif;
@@ -28,20 +28,19 @@ div {
 	-webkit-font-smoothing: antialiased;
 }
 
-/* makes li active with a set color */
-.links > li.active {
-    color: #4c5058;
-    font-weight: 500;
-}
-
-
-.links li {
+.header .links li {
 	display: inline;
 	padding: 0rem 1.3rem;
 }
 
+/* makes li active with a set color */
+.header .links > li.active {
+    color: #4c5058;
+    font-weight: 500;
+}
+
 /* mouse over link */
-.links li:hover {
+.header .links li:hover {
 	cursor: pointer;
 	color: #333333;
 }
