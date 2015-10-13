@@ -10,7 +10,8 @@ div {
 .header {
 	background-color: #fff;
 	width:100%;
-	position:fixed;
+	position:absolute;
+	border-bottom: .1rem solid #DDD;
 }
 
 .header > div.content {
@@ -44,3 +45,40 @@ div {
 	cursor: pointer;
 	color: #333333;
 }
+
+/* Middel section with background image*/
+
+.middle {
+    background-image: url('../images/first-background copy.jpg');
+    background-position: right -10rem top -6rem;
+    background-repeat: no-repeat;
+    color: white;
+    position: fixed;
+    height: 250rem;
+    width: 100%;
+    margin-top: 3.4rem;
+}
+
+h1 {
+    position: relative;
+    left: 41%;
+    margin-top: 12rem;
+    font-size: 3rem;
+}
+
+h3 {
+	position: relative;
+    left: 40%;
+    font-size: 1.5rem;
+    margin-top: -2rem;
+}
+
+button {
+	position: relative;
+	left: 50%;
+}
+
+
+
+
+
