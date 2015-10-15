@@ -1,32 +1,35 @@
+/* Want the font for all text to be Roboto*/
 body {
 	margin: 0;
-}
-
-div {
-    border: 1px solid Chocolate;
+	font-family: 'Roboto', sans-serif;
 }
 
 /* Navigation Section*/
 .header {
 	background-color: #fff;
 	width:100%;
-	position:absolute;
+	position:fixed;
 	border-bottom: .1rem solid #DDD;
 }
 
-.header > div.content {
+.header > .content {
+	height: 4.375rem;
+}
+
+.content {
 	padding: 0rem .5rem;
+	margin: 0 auto;
+    min-width: 37.5rem;
 }
 
 
 .header .links {
 	list-style-type: none;
 	float: right;
-	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	color: #838994;
 	letter-spacing: 0.03em;
-	-webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased; /*specific effect for Karma landing page*/
 }
 
 .header .links li {
@@ -50,35 +53,40 @@ div {
 
 .middle {
     background-image: url('../images/first-background copy.jpg');
-    background-position: right -10rem top -6rem;
+    background-position: center bottom;
     background-repeat: no-repeat;
-    color: white;
-    position: fixed;
-    height: 250rem;
-    width: 100%;
-    margin-top: 3.4rem;
+    background-size: cover;
+    height: 45.9rem;
+    overflow: auto;
 }
 
-h1 {
-    position: relative;
-    left: 41%;
-    margin-top: 12rem;
-    font-size: 3rem;
+.middle h1 {
+	margin-top:15rem;
+	margin-bottom:0;
+	font-size:3rem;
 }
 
-h3 {
-	position: relative;
-    left: 40%;
-    font-size: 1.5rem;
-    margin-top: -2rem;
+.middle h1, .middle h3 {
+	color: #FFFFFF;
+	text-align: center;
+	font-weight: 300;
 }
 
-button {
-	position: relative;
-	left: 50%;
+.BigButton {
+	background-color: #f15a29; 
+    text-shadow: none;
+    color: #FFFFFF;
+    border-style: none;
+    border-radius: 4px;
+    padding: 16px 26px;
+    line-height: 1.33;
+    display: block;
+    margin: 0 auto;
 }
 
-
-
-
+button:hover {
+    background-color: #d9400e;
+    border-color: #cf3d0e;
+    cursor: pointer;
+}
 
