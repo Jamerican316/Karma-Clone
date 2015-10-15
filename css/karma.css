@@ -1,7 +1,15 @@
 /* Want the font for all text to be Roboto*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
-	margin: 0;
 	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased; /*specific effect for Karma landing page*/
 }
 
 /* Navigation Section*/
@@ -16,8 +24,13 @@ body {
 	height: 4.375rem;
 }
 
+.header .logo {
+    height: 4.375rem;
+}
+
 .content {
-	padding: 0rem .5rem;
+	/* was this padding even necessary?*/
+	padding: 0 0.909rem;
 	margin: 0 auto;
     min-width: 37.5rem;
 }
@@ -26,15 +39,52 @@ body {
 .header .links {
 	list-style-type: none;
 	float: right;
-	font-size: 16px;
+	font-size: 1.04rem;
 	color: #838994;
 	letter-spacing: 0.03em;
-	-webkit-font-smoothing: antialiased; /*specific effect for Karma landing page*/
+	margin-top: 1.7rem;
 }
 
 .header .links li {
 	display: inline;
-	padding: 0rem 1.3rem;
+	margin-left:1.5rem;
+/* this was making the logo drop out of the nav
+when I opened dev tools. I changed to margin-left
+and it corrected the problem..?  
+
+	**********************
+	**********************
+**** padding: 0rem 1.3rem; ****
+	**********************
+	**********************
+
+stack overflow user pavon 
+
+To me the biggest difference between padding and margin is that 
+margins auto-collapse, and padding doesn't. Consider two elements 
+next to each other each with padding of 1em. This padding is considered 
+to be part of the element, and is always preserved. So you will end 
+up with the content of the first element, followed by the padding of 
+the first element, followed by the padding of the second, followed by 
+the content of the second element. Thus content of the two elements will 
+end up being 2em apart.
+
+Now replace that padding with 1em margin. Margins are considered to be 
+outside of the element, and margins of adjacent items will overlap. So 
+in this example you will end up with the content of the first element 
+followed by 1em of combined margin followed by the content of the second 
+element. So the content of the two elements is only 1em apart.
+
+This can be really useful when you know that you want say 1em of spacing 
+around an element, regardless of what element it is next to.
+
+The other two big differences is that padding is included in the click 
+region and background color/image, but not the margin.
+
+By default I use margin everywhere, except when I have a 
+border or background and want to increase the space inside that visible box.
+ */
+
 }
 
 /* makes li active with a set color */
