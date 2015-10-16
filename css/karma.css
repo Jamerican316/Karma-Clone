@@ -12,7 +12,10 @@ body {
 	-webkit-font-smoothing: antialiased; /*specific effect for Karma landing page*/
 }
 
-/* Navigation Section*/
+/* Navigation Section
+===============================================
+===============================================
+*/
 .header {
 	background-color: #fff;
 	width:100%;
@@ -99,7 +102,10 @@ border or background and want to increase the space inside that visible box.
 	color: #333333;
 }
 
-/* Middel section with background image*/
+/* Middel section with background image
+==============================================================
+==============================================================
+*/
 
 .middle {
     background-image: url('../images/first-background copy.jpg');
@@ -139,4 +145,27 @@ button:hover {
     border-color: #cf3d0e;
     cursor: pointer;
 }
+
+/* Middle section continued - Title "Product info section"
+======================================================================
+======================================================================
+*/
+
+.howItWorks h1 {
+	text-align: center;
+	font-size:3rem;
+	font-weight: 100;
+}
+
+.content > div.options{
+	text-align: center;
+}
+
+
+.options > div.option {
+	display:inline-block;
+	margin: 0 3.5rem;
+}
+
+
 
