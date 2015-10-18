@@ -118,6 +118,11 @@ button:hover {
     cursor: pointer;
 }
 
+.twitter:hover, .facebook:hover, .instagram:hover {
+    cursor: pointer;
+}
+
+
 /* Middle section continued - Title "Product info section"
 ======================================================================
 ======================================================================
